@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PhotoPuzzle</title>
+    <meta name="description" content="PhotoPuzzle official app page.">
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #09040d;
+        --panel: rgba(25, 12, 32, 0.86);
+        --gold: #ffbd5a;
+        --text: #fff7e6;
+        --muted: #d9c6ec;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at 20% 20%, rgba(255, 185, 83, 0.28), transparent 32%),
+          radial-gradient(circle at 80% 10%, rgba(114, 52, 255, 0.28), transparent 32%),
+          linear-gradient(135deg, #08020c, #1b0d24 52%, #0d050f);
+        display: grid;
+        place-items: center;
+        padding: 28px;
+      }
+      main {
+        width: min(760px, 100%);
+        padding: 34px;
+        border: 1px solid rgba(255, 189, 90, 0.42);
+        border-radius: 28px;
+        background: var(--panel);
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(42px, 7vw, 72px);
+        line-height: 0.95;
+        color: #fff3d0;
+        text-shadow: 0 8px 28px rgba(255, 174, 61, 0.38);
+      }
+      p {
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.55;
+      }
+      a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 48px;
+        padding: 12px 18px;
+        margin: 8px 8px 0 0;
+        border-radius: 999px;
+        color: #1c1004;
+        background: linear-gradient(180deg, #ffe19b, var(--gold));
+        font-weight: 800;
+        text-decoration: none;
+      }
+      .secondary {
+        color: #fff6df;
+        border: 1px solid rgba(255, 189, 90, 0.45);
+        background: rgba(255, 255, 255, 0.08);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>PhotoPuzzle</h1>
+      <p>
+        PhotoPuzzle is a puzzle game where players build beautiful images,
+        use hints, complete evolving levels, and share finished puzzles.
+      </p>
+      <a href="./privacy-policy.html">Privacy Policy</a>
+      <a class="secondary" href="./app-ads.txt">app-ads.txt</a>
+    </main>
+  </body>
+</html>
